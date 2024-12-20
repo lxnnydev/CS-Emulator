@@ -28,13 +28,13 @@ This project consists of an emulator and a script parser that enable a simple vm
 | `LOAD`          | 1          | Loads a value into a named register.                                           |
 | `ADD`           | 2          | Adds a value to a named register.                                              |
 | `SUBTRACT`      | 3          | Subtracts a value from a named register.                                       |
+| `PRINT`         | 4          | Prints all registers and their values.                                         |
 | `MULTIPLY`      | 5          | Multiplies a named register by a value.                                        |
 | `DIVIDE`        | 6          | Divides a named register by a value (with error handling for division by zero).|
 | `PUSH`          | 8          | Pushes the value of a named register onto the stack.                           |
 | `POP`           | 9          | Pops the top value from the stack into a named register.                       |
 | `INPUT`         | 10         | Prompts the user for input and stores it in a named register.                  |
 | `OUTPUT`        | 11         | Outputs the value of a named register to the console.                          |
-| `PRINT`         | 4          | Prints all registers and their values.                                         |
 | `HALT`          | 99         | Stops the emulator.                                                            |
 
 ---
