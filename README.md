@@ -85,12 +85,26 @@ HALT
 ### **Parsed Bytecode**
 This script would be converted by the parser into the following bytecode:
 ```plaintext
-1, 3, 'a', 'b', 'c', 10,  // LOAD "abc" 10
-2, 3, 'a', 'b', 'c', 5,   // ADD "abc" 5
-10, 3, 'a', 'b', 'c',     // INPUT "abc"
-11, 3, 'a', 'b', 'c',     // OUTPUT "abc"
-4,                        // PRINT
-99                        // HALT
+1, 3, 'a', 'b', 'c', 10,  // 1: LOAD operation
+                          // 3: Length of the string "abc"
+                          // 'a', 'b', 'c': Characters of the register name "abc"
+                          // 10: Value to load into the register
+
+2, 3, 'a', 'b', 'c', 5,   // 2: ADD operation
+                          // 3: Length of the string "abc"
+                          // 'a', 'b', 'c': Characters of the register name "abc"
+                          // 5: Value to add to the register "abc"
+
+10, 3, 'a', 'b', 'c',     // 10: INPUT operation
+                          // 3: Length of the string "abc"
+                          // 'a', 'b', 'c': Characters of the register name "abc"
+
+11, 3, 'a', 'b', 'c',     // 11: OUTPUT operation
+                          // 3: Length of the string "abc"
+                          // 'a', 'b', 'c': Characters of the register name "abc"
+4,                        // 4: PRINT all registers and their values
+
+99                        // 99: HALT the program
 ```
 
 ---
