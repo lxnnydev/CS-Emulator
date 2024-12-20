@@ -19,7 +19,7 @@ This project consists of an emulator and a script parser that enable a simple vm
 - **Error Handling:** Detects unknown instructions, invalid arguments, and stack underflows.
 - **Extensibility:** Easily add new instructions to both the emulator and the parser.
 
---
+---
 
 ## **Instruction Set**
 
@@ -107,10 +107,10 @@ class Program
         var parser = new Parser();
 
         string script = @"
-            LOAD \"abc\" 10
-            ADD \"abc\" 5
-            INPUT \"abc\"
-            OUTPUT \"abc\"
+            LOAD ""abc"" 10
+            ADD ""abc"" 5
+            INPUT ""abc""
+            OUTPUT ""abc""
             PRINT
             HALT
         ";
@@ -123,12 +123,5 @@ class Program
     }
 }
 ```
-
----
-
-## **Use Cases**
-1. **Teaching:** Demonstrates fundamental concepts of emulators and script parsing.
-2. **Prototyping:** Develops and tests custom instruction sets and scripts.
-3. **Learning:** Explores virtual machine architecture and language parsing techniques.
 
 ---
